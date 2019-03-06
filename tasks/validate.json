@@ -1,0 +1,33 @@
+{
+    "puppet_task_version": 1,
+    "supports_noop": false,
+    "description": "Validate network device configuration using a validation file",
+    "parameters": {
+        "vendor": {
+            "description": "Vendor of the network device",
+            "type": "Enum[eos,junos,iosxr,nxos,nxos_ssh,ios]"
+        },
+        "user": {
+            "description": "Username of hostname of network device",
+            "type": "String[1]",
+            "sensitive": true
+        },
+        "password": {
+            "description": "Password of network device",
+            "type": "String[1]",
+            "sensitive": true
+        },
+        "hostname": {
+            "description": "hostname of network device",
+            "type": "String[1]"
+        },
+        "validation_file": {
+            "description": "path to validation file",
+            "type": "String[1]"
+        },
+        "optional_args": {
+            "description": "optional args",
+            "type": "Optional[String[1]]"
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "puppet_task_version": 1,
+    "supports_noop": true,
+    "description": "Configure network devices using a supplied config file",
+    "parameters": {
+        "debug": {
+            "description": "Turn debug mode on.",
+            "type": "Optional[Boolean]"
+        },
+        "vendor": {
+            "description": "Vendor of the network device",
+            "type": "Enum[eos,junos,iosxr,nxos,nxos_ssh,ios]"
+        },
+        "user": {
+            "description": "Username of hostname of network device",
+            "type": "String[1]",
+            "sensitive": true
+        },
+        "password": {
+            "description": "Password of network device",
+            "type": "String[1]",
+            "sensitive": true
+        },
+        "hostname": {
+            "description": "hostname of network device",
+            "type": "String[1]"
+        },
+        "config_file": {
+            "description": "path to config file",
+            "type": "String[1]"
+        },
+        "strategy": {
+            "description": "strategy",
+            "type": "Enum[merge,replace]"
+        },
+        "dry_run": {
+            "description": "perform a dry-run (same as noop)",
+            "type": "Optional[Boolean]"
+        },
+        "optional_args": {
+            "description": "optional args",
+            "type": "Optional[String[1]]"
+        }
+    }
+}
