@@ -19,7 +19,7 @@ class MyTask(TaskHelper):
         raise TaskError('napalm error', 'napalm/connection', {'msg': "the python module napalm is required"})        
 
     hostname = args['hostname']
-    username = args['username']
+    username = args['user']
     dev_os = args['vendor']
     password = args['password']
     timeout = 60
