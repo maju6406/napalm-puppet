@@ -1,6 +1,6 @@
 
 # napalm_puppet
-
+[![Build Status](https://travis-ci.org/maju6406/napalm-puppet.svg?branch=master)](https://travis-ci.org/maju6406/napalm-puppet)  [![Puppet Forge](https://img.shields.io/puppetforge/v/beersy/napalm.svg)](https://forge.puppetlabs.com/beersy/napalm)
 #### Table of Contents
 
 1. [Description](#description)
