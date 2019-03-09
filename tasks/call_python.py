@@ -31,9 +31,9 @@ class MyTask(TaskHelper):
         if val is None:
             raise TaskError('napalm error', 'napalm/connection', {'msg': str(key) + " is required"})
 
-    if args['optional_args'] is None:
-        optional_args = {}
-    else:
+#    if args['optional_args'] is None:
+#        optional_args = {}
+#    else:
         optional_args = args['optional_args']
 
     try:
