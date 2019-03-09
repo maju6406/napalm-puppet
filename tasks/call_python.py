@@ -34,7 +34,7 @@ class MyTask(TaskHelper):
 #    if args['optional_args'] is None:
 #        optional_args = {}
 #    else:
-        optional_args = args['optional_args']
+#        optional_args = args['optional_args']
 
     try:
         network_driver = get_network_driver(dev_os)
@@ -46,7 +46,7 @@ class MyTask(TaskHelper):
                                 username=username,
                                 password=password,
                                 timeout=timeout,
-                                optional_args=optional_args)
+                                optional_args='')
         device.open()
     except Exception as e:
         raise TaskError('napalm error', 'napalm/connection', {'msg': 'cannot connect to device'+ str(e)})
