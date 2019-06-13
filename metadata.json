@@ -40,6 +40,11 @@
       "version_requirement": ">= 4.7.0 < 6.0.0"
     }
   ],
+  "tags": [
+    "napalm",
+    "networking",
+    "network"
+  ],
   "pdk-version": "1.7.0",
   "template-url": "https://github.com/puppetlabs/pdk-templates",
   "template-ref": "1.7.0-0-g57412ed"
